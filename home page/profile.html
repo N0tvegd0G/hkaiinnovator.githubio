@@ -735,6 +735,161 @@
             transform: scaleX(1);
             transform-origin: left;
         }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .avatar-wrapper {
+                top: 16px;
+                left: 16px;
+            }
+
+            .avatar {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+
+            .theme-toggle {
+                top: 16px;
+                right: 16px;
+                width: 44px;
+                height: 44px;
+                font-size: 1.3rem;
+            }
+
+            .sidebar {
+                width: 300px;
+            }
+
+            .sidebar.open {
+                transform: translateX(-60px);
+            }
+
+            .profile-container {
+                padding: 2rem 1.5rem;
+                border-radius: 24px;
+                max-width: 100%;
+            }
+
+            .avatar-section {
+                margin-bottom: 2rem;
+            }
+
+            .avatar-large {
+                width: 100px;
+                height: 100px;
+            }
+
+            .profile-row {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                margin-bottom: 1.4rem;
+                align-items: stretch;
+            }
+
+            .profile-label {
+                width: auto;
+                flex-shrink: 0;
+                font-size: 0.9rem;
+            }
+
+            .profile-input-wrapper {
+                gap: 0.6rem;
+                white-space: normal;
+            }
+
+            .profile-input {
+                padding: 0.75rem;
+                font-size: 0.9rem;
+                border-bottom-width: 1.2px;
+            }
+
+            .password-toggle {
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 0.75rem;
+            }
+
+            .avatar-wrapper {
+                top: 12px;
+                left: 12px;
+            }
+
+            .avatar {
+                width: 44px;
+                height: 44px;
+                font-size: 1rem;
+            }
+
+            .theme-toggle {
+                top: 12px;
+                right: 12px;
+                width: 40px;
+                height: 40px;
+                font-size: 1.1rem;
+            }
+
+            .sidebar {
+                width: 280px;
+            }
+
+            .sidebar.open {
+                transform: translateX(-80px);
+            }
+
+            .profile-container {
+                padding: 1.5rem 1rem;
+                border-radius: 20px;
+                max-width: 100%;
+            }
+
+            .avatar-section {
+                margin-bottom: 1.5rem;
+            }
+
+            .avatar-large {
+                width: 80px;
+                height: 80px;
+            }
+
+            .profile-row {
+                gap: 0.5rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .profile-label {
+                font-size: 0.85rem;
+            }
+
+            .profile-input {
+                padding: 0.65rem;
+                font-size: 0.85rem;
+                border-bottom-width: 1px;
+            }
+
+            .password-toggle {
+                font-size: 0.8rem;
+            }
+
+            .menu-item {
+                padding: 0.7rem 0.8rem;
+                font-size: 1rem;
+            }
+
+            .sidebar-logout-btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
